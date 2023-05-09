@@ -1,8 +1,8 @@
 ---
-layout: posts
 title: Element Plus 文档导航效果模仿
 date: 2023-04-13 08:25:19
 tags: [CSS]
+layout: post
 ---
 
 ## 前言

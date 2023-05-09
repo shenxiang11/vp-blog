@@ -14,14 +14,9 @@ export default defineConfig({
         text: "首页",
         link: "/",
       },
-      {
-        text: "文章",
-        link: "/article?layout=article",
-      },
-      { text: "标签", link: "/tags?layout=post", activeMatch: "" },
     ],
     socialLinks: [
-      { icon: "github", link: "https://github.com/fzdwx/vitepress-blog-theme" },
+      { icon: "github", link: "https://github.com/shenxiang11" },
     ],
   },
 })

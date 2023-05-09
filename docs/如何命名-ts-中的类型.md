@@ -2,6 +2,7 @@
 title: 如何命名 ts 中的类型
 date: 2023-04-16 13:12:16
 tags: [Typescript]
+layout: post
 ---
 
 ## 不要使用复数形式，除非它真的是一个数组

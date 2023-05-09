@@ -72,3 +72,7 @@ header > h1 {
 img {
   @apply dark:brightness-75;
 }
+
+p > img {
+  margin: 0 auto;
+}
