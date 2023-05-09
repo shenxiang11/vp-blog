@@ -1,7 +1,10 @@
 <script setup lang="ts">
+import { useData } from "vitepress";
 import { data as allPosts } from '@/utils/posts.data.ts'
 import { CalendarIcon } from '@heroicons/vue/24/outline'
 import { computed, ref } from 'vue'
+
+const { site } = useData()
 
 const currentPage = ref(1)
 const pageSize = 10
@@ -28,7 +31,7 @@ function nextPage() {
 <template>
   <div>
     <a
-      :href="post.url"
+      :href="site.base.slice(0, -1) + post.url"
       v-for="post in posts"
       :key="post.url"
       class="border my-4 flex gap-4 h-36 p-4 rounded-md"
