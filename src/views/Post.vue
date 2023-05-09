@@ -44,7 +44,7 @@ const { site, page, frontmatter } = useData()
   </div>
 
   <!-- tags -->
-  <div class="m-4 flex justify-center">
+  <div class="m-4 flex justify-center gap-2">
       <span class="tag" v-for="tag in frontmatter.tags" :key="tag">{{tag}}</span>
   </div>
 
