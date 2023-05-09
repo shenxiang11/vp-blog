@@ -6,6 +6,7 @@ export default defineConfig({
   description: "A VitePress Site",
   lastUpdated: true,
   base: '/vp-blog',
+  outDir: "./dist",
   themeConfig: {
     search: {
       provider: "local",
