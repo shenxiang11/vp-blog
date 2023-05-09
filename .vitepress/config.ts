@@ -7,6 +7,9 @@ export default defineConfig({
   lastUpdated: true,
   base: '/vp-blog',
   outDir: "./dist",
+  markdown: {
+    lineNumbers: true,
+  },
   themeConfig: {
     search: {
       provider: "local",

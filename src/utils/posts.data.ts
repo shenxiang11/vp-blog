@@ -39,10 +39,9 @@ export default createContentLoader('docs/*.md', {
 })
 
 function formatDate(raw: string): Post['date'] {
-  const date = new Date(raw)
-  date.setUTCHours(12)
+  const date = dayjs(raw)
   return {
-    time: +date,
-    string: dayjs(raw).format('YYYY-MM-DD')
+    time: date.valueOf(),
+    string: date.format('YYYY-MM-DD HH:mm:ss')
   }
 }

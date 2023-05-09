@@ -39,7 +39,7 @@ function nextPage() {
       <img v-if="post.cover" :src="post.cover.image" class="w-48 object-cover" />
       <div class="flex-shrink-0 flex flex-col">
         <h1 class="text-xl font-semibold mb-3">{{ post.title }}</h1>
-        <div class="m" v-if="post.description">{{ post.description }}</div>
+        <div class="text-gray-600" v-if="post.description">{{ post.description }}</div>
         <div class="flex-grow"></div>
 
         <div class="flex gap-2">

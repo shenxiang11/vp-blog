@@ -12,7 +12,6 @@ const { site, frontmatter } = useData()
 <template>
   <Navbar />
   <div class="container">
-<!--    {{ frontmatter }}-->
     <Home v-if="frontmatter.home" />
     <Post v-else-if="frontmatter.layout === 'post'" />
     <div v-else>
