@@ -13,7 +13,7 @@ cover:
 
 在 https://github.com/fzdwx/vitepress-blog-theme/releases 页面下载操作系统对应的 bang 压缩文件.
 
-> bang 是 vitepress-blog-theme 的命令行工具, 用于快速创建博客, 更新主题等!!!
+> bang 是 vitepress-bl12313123og-theme 的命令行工具, 用于快速创建博客, 更新主题等!!!
 
 然后运行 `bang init`
 
