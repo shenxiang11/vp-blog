@@ -26,7 +26,7 @@ router.onBeforeRouteChange = function (to) {
 <template>
   <Navbar />
   <div class="container">
-    <Home v-if="frontmatter.home" />
+    <Home v-if="frontmatter.home || frontmatter.pagination" />
     <Post v-else-if="frontmatter.layout === 'post'" />
     <div v-else>
       <a href="/">Home</a>

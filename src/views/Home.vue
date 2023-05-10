@@ -1,31 +1,24 @@
 <script setup lang="ts">
-import { useData } from "vitepress";
+import { useData, withBase } from "vitepress";
 import { data as allPosts } from '@/utils/posts.data.ts'
 import { CalendarIcon } from '@heroicons/vue/24/outline'
-import { computed, ref } from 'vue'
+import { computed, ref, watch } from "vue";
 
-const { site } = useData()
+const { site, frontmatter } = useData()
 
-const currentPage = ref(1)
-const pageSize = 10
+const currentPage = ref(frontmatter.value.current ?? 1)
+const pageSize = 8
 
 const posts = computed(() => {
   const start = (currentPage.value - 1) * pageSize
   return allPosts.slice(start, start + pageSize)
 })
-const lastPage = computed(() => Math.ceil(allPosts.length/pageSize))
 
-function prevPage() {
-  if (currentPage.value > 1) {
-    currentPage.value--
-  }
-}
+const lastPage = computed(() => Math.ceil(allPosts.length / pageSize))
 
-function nextPage() {
-  if (currentPage.value < lastPage.value) {
-    currentPage.value++
-  }
-}
+watch(() => frontmatter.value.current, function() {
+  currentPage.value = frontmatter.value.current ?? 1
+})
 </script>
 
 <template>
@@ -58,10 +51,9 @@ function nextPage() {
   </div>
 
   <div class="flex justify-center p-4">
-    <button
-      @click="prevPage"
+    <a
+      :href="withBase(`/articles_${currentPage-1}.html`)"
       v-if="currentPage !== 1"
-      :disabled="currentPage === 1"
       class="inline-flex items-center px-4 py-2 mr-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
     >
       <svg
@@ -78,11 +70,10 @@ function nextPage() {
         ></path>
       </svg>
       上一页
-    </button>
-    <button
-      @click="nextPage"
+    </a>
+    <a
+      :href="withBase(`/articles_${currentPage+1}.html`)"
       v-if="currentPage !== lastPage"
-      :disabled="currentPage === lastPage"
       class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
     >
       下一页
@@ -99,7 +90,7 @@ function nextPage() {
           clip-rule="evenodd"
         ></path>
       </svg>
-    </button>
+    </a>
   </div>
 </template>
 

@@ -1,5 +1,6 @@
 import { createContentLoader } from 'vitepress'
 import dayjs from 'dayjs'
+import generatePaginationPages from "./generatePaginationPages";
 
 interface Post {
   title: string
@@ -22,6 +23,9 @@ export { data }
 export default createContentLoader('docs/*.md', {
   excerpt: true,
   transform(raw): Post[] {
+    !(async function() {
+      await generatePaginationPages(raw.length, 8)
+    })()
     return (
       raw
         .map(({ url, frontmatter, excerpt }) => ({
