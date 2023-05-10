@@ -13,5 +13,3 @@ const props = defineProps<{
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
   ></iframe>
 </template>
-
-<style scoped></style>

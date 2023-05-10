@@ -96,7 +96,7 @@ onUnmounted(() => {
 
 
 <script setup>
-import Clickpopup from '@/components/ClickPopup.vue'
+import Clickpopup from '@/components/InDoc/ClickPopup.vue'
 </script>
 
 <Clickpopup />

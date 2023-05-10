@@ -8,7 +8,7 @@ cover:
 ---
 
 <script setup>
-import CodeSandbox from '@/components/CodeSandbox.vue'
+import CodeSandbox from '@/components/InDoc/CodeSandbox.vue'
 </script>
 
 
