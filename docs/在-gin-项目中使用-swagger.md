@@ -3,6 +3,8 @@ title: 在 gin 项目中使用 swagger
 date: 2023-04-25 09:57:23
 tags: [go, gin]
 layout: post
+cover:
+  image: /vp-blog/covers/go.png
 ---
 
 ## 前言
