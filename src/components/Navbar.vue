@@ -51,7 +51,7 @@ async function handleThemeClick(e) {
     <div class="container">
       <VPNavBarTitle />
       <VPNavBarSearch />
-      <VPNavBarMenu />
+<!--      <VPNavBarMenu />-->
       <div class="appearance flex items-center">
         <a href="javascript:void(0);" @click="handleThemeClick">
           <SunIcon v-if="!isDark" class="w-6" />
@@ -74,7 +74,7 @@ async function handleThemeClick(e) {
   margin: 0 auto;
 }
 
-.appearance::before,
+/*.appearance::before,*/
 .social-links::before {
   margin-left: 16px;
   width: 1px;
