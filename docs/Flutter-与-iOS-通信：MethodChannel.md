@@ -18,7 +18,7 @@ layout: post
 
 创建 channel 的方式几乎和之前没有任何区别。通过 `channel.invoke(xxx)` 即可调用原生方法。
 
-```flutter
+```dart
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 

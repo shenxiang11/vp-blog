@@ -22,7 +22,7 @@ layout: post
 
 后者是向原生端发送消息，并且可以接收到原生端对于这一条消息的回复。
 
-```flutter
+```dart
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -143,7 +143,7 @@ import Flutter
 
 下面我直接贴出我们项目的日志，前 5s 我们先不要点击按钮，先查看 swift 向 flutter 发送消息的情况，然后我们再点击一次按钮。
 
-```text
+```txt
 flutter: 1. flutter receive: 7. swift send
 8. swift receive flutter reply: Optional(2. flutter reply receive)
 
