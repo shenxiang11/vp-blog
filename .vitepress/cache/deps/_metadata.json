@@ -1,0 +1,38 @@
+{
+  "hash": "061626e0",
+  "browserHash": "47d14f16",
+  "optimized": {
+    "vue": {
+      "src": "../../../node_modules/.pnpm/vue@3.2.47/node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "339e1e70",
+      "needsInterop": false
+    },
+    "@heroicons/vue/24/outline": {
+      "src": "../../../node_modules/.pnpm/@heroicons+vue@2.0.17_vue@3.2.47/node_modules/@heroicons/vue/24/outline/index.js",
+      "file": "@heroicons_vue_24_outline.js",
+      "fileHash": "2de65c3a",
+      "needsInterop": true
+    },
+    "dayjs": {
+      "src": "../../../node_modules/.pnpm/dayjs@1.11.7/node_modules/dayjs/dayjs.min.js",
+      "file": "dayjs.js",
+      "fileHash": "4c18f4aa",
+      "needsInterop": true
+    },
+    "@vueuse/core": {
+      "src": "../../../node_modules/.pnpm/@vueuse+core@10.1.2_vue@3.2.47/node_modules/@vueuse/core/index.mjs",
+      "file": "@vueuse_core.js",
+      "fileHash": "22ab86d2",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-4NRH2SV6": {
+      "file": "chunk-4NRH2SV6.js"
+    },
+    "chunk-OL3AADLO": {
+      "file": "chunk-OL3AADLO.js"
+    }
+  }
+}
