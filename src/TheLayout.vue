@@ -9,7 +9,7 @@ import Post from '@/views/Post.vue'
 const { site, frontmatter } = useData()
 const router = useRouter()
 
-router.onBeforeRouteChange = function(to) {
+router.onBeforeRouteChange = function (to) {
   return new Promise(async (resolve) => {
     if (!document.startViewTransition) {
       resolve(to)
@@ -33,12 +33,21 @@ router.onBeforeRouteChange = function(to) {
       <Content />
     </div>
   </div>
+
+  <footer class="rounded-lg m-4">
+    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+      <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
+        >© 2023 前端芯事. All Rights Reserved.</span
+      >
+    </div>
+  </footer>
 </template>
 
 <style scoped>
 .container {
   @apply md:w-full;
   width: 960px;
+  min-height: 100vh;
   margin: 0 auto;
 }
 </style>
