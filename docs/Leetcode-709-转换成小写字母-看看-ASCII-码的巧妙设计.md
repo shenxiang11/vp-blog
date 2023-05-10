@@ -5,7 +5,7 @@ date: 2023-04-17 09:31:31
 tags: [算法, 位运算]
 layout: post
 cover:
-  image: /vp-blog/covers/06.jpeg
+  image: /vp-blog/covers/leetcode.jpeg
 ---
 
 [力扣 709: 转换成小写字母](https://leetcode.cn/problems/to-lower-case/)
