@@ -1,9 +1,7 @@
 <script setup lang="ts">
-import { useData, useRoute } from 'vitepress'
+import { useData } from 'vitepress'
 import { CalendarIcon, CalendarDaysIcon } from '@heroicons/vue/24/outline'
 import dayjs from 'dayjs'
-
-const route = useRoute()
 
 const { site, page, frontmatter } = useData()
 </script>
@@ -34,7 +32,7 @@ const { site, page, frontmatter } = useData()
 
   <!--  cover  -->
   <div class="border-solid border-2 p-1" v-if="frontmatter.cover">
-    <img :src="frontmatter.cover.image" alt="" />
+    <img class="w-full" :src="frontmatter.cover.image" alt="" />
   </div>
 
   <!--  content  -->

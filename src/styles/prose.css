@@ -77,7 +77,7 @@ p > img {
   margin: 0 auto;
 }
 
-/* toggle dark 动画 */
+/*toggle dark 动画*/
 ::view-transition-image-pair(root) {
   isolation: auto;
 }
