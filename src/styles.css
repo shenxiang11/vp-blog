@@ -1,8 +1,0 @@
-@import "@/styles/var.css";
-@import "@/styles/font.css";
-@import "@/styles/prose.css";
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
