@@ -12,7 +12,7 @@ const { site, page, frontmatter } = useData()
   <!-- title -->
   <header class="mt-32 text-center">
     <h1>{{ page.title }}</h1>
-    <p class="m-4 text-gray-600" v-if="page.description">{{ page.description }}</p>
+    <p class="m-4 text-gray-500" v-if="page.description">{{ page.description }}</p>
   </header>
 
   <!--  time  -->

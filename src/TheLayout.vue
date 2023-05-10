@@ -23,6 +23,7 @@ const { site, frontmatter } = useData()
 
 <style scoped>
 .container {
+  @apply md:w-full;
   width: 960px;
   margin: 0 auto;
 }
