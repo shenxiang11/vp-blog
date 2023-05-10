@@ -5,7 +5,7 @@ date: 2023-05-02 11:06:05
 tags: [Javascript]
 layout: post
 cover:
-    image: /resources/2023-05/05.png
+    image: /vp-blog/covers/05.png
 ---
 
 ## 前言：困惑的产生
