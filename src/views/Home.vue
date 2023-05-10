@@ -36,8 +36,10 @@ function nextPage() {
       :key="post.url"
       class="border my-4 flex gap-4 h-36 p-4 rounded-md"
     >
-      <img v-if="post.cover" :src="post.cover.image" class="w-48 object-cover" />
-      <div class="flex-shrink-0 flex flex-col">
+      <div class="overflow-hidden">
+        <img v-if="post.cover" :src="post.cover.image" class="w-48 object-cover" />
+      </div>
+      <div class="flex-shrink-0 flex-grow flex flex-col">
         <h1 class="text-xl font-semibold mb-3">{{ post.title }}</h1>
         <div class="text-gray-500" v-if="post.description">{{ post.description }}</div>
         <div class="flex-grow"></div>
