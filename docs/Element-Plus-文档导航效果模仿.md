@@ -7,6 +7,11 @@ cover:
   image: /vp-blog/covers/css.jpeg
 ---
 
+<script setup>
+import CodeSandbox from '@/components/CodeSandbox.vue'
+</script>
+
+
 ## 前言
 
 ![](/resources/2023-04-13/01.gif)
@@ -15,12 +20,7 @@ cover:
 
 CSS 有个很多效果并不需要很多知识，但是开发人员往往很难想到，这次目标就是模仿一下这个效果。
 
-<iframe src="https://codesandbox.io/embed/hopeful-rgb-c1eps8?fontsize=14&hidenavigation=1&theme=dark&view=preview"
-style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
-title="hopeful-rgb-c1eps8"
-allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-></iframe>
+<CodeSandbox src="https://codesandbox.io/embed/hopeful-rgb-c1eps8?fontsize=14&hidenavigation=1&theme=dark&view=preview"></CodeSandbox>
 
 ## 原理简单介绍
 
