@@ -3,6 +3,8 @@ title: Flutter 与 iOS 通信：MethodChannel
 date: 2023-04-23 10:38:44
 tags: [Flutter, iOS, Swift]
 layout: post
+cover:
+  image: /vp-blog/covers/flutter.png
 ---
 
 ## 前言

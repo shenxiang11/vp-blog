@@ -3,6 +3,8 @@ title: 'Flutter 与 iOS 通信: BasicMessageChannel'
 date: 2023-04-22 12:05:00
 tags: [Flutter, iOS, Swift]
 layout: post
+cover:
+  image: /vp-blog/covers/flutter.png
 ---
 
 ## 前言

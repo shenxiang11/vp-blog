@@ -3,6 +3,8 @@ title: iOS Swift 工程集成 React Native
 date: 2023-04-14 19:13:49
 tags: [React Native, Swift, iOS]
 layout: post
+cover:
+  image: /vp-blog/covers/react-native.png
 ---
 
 ## 前言

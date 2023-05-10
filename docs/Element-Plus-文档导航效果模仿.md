@@ -3,6 +3,8 @@ title: Element Plus 文档导航效果模仿
 date: 2023-04-13 08:25:19
 tags: [CSS]
 layout: post
+cover:
+  image: /vp-blog/covers/css.jpeg
 ---
 
 ## 前言
@@ -13,8 +15,12 @@ layout: post
 
 CSS 有个很多效果并不需要很多知识，但是开发人员往往很难想到，这次目标就是模仿一下这个效果。
 
-{% iframe https://codesandbox.io/embed/hopeful-rgb-c1eps8?fontsize=14&hidenavigation=1&theme=dark&view=preview %}
-
+<iframe src="https://codesandbox.io/embed/hopeful-rgb-c1eps8?fontsize=14&hidenavigation=1&theme=dark&view=preview"
+style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+title="hopeful-rgb-c1eps8"
+allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 ## 原理简单介绍
 

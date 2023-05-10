@@ -3,6 +3,8 @@ title: 手写 min-vue-router
 date: 2023-04-21 10:49:23
 tags: [Vue, Vue-router]
 layout: post
+cover:
+  image: /vp-blog/covers/vue.jpeg
 ---
 
 ## 前言
