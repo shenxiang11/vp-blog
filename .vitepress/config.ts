@@ -6,7 +6,7 @@ export default defineConfig({
   description: "A VitePress Site",
   lastUpdated: true,
   base: '/vp-blog',
-  outDir: "./dist",
+  outDir: "./www/dist",
   head: [
     [
       'link',
