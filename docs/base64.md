@@ -168,7 +168,7 @@ async function customFileBase64Fn(file: any) {
 
 ## 总结
 
-![](/Fresources/2023-05/05.png)
+![](/resources/2023-05/05.png)
 
 最后，成功出现了两个图片，可以看出自己的实现会比直接调用慢了 10 倍的数量级别，但是我们只是为了了解 base64 编码原理，我已经很满足了。
 
