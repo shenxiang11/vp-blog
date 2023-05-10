@@ -7,6 +7,16 @@ export default defineConfig({
   lastUpdated: true,
   base: '/vp-blog',
   outDir: "./dist",
+  head: [
+    [
+      'link',
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/vp-blog/favicon.ico'
+      }
+    ],
+  ],
   markdown: {
     lineNumbers: true,
   },
