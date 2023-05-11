@@ -2,7 +2,7 @@
 title: vitepress 博文页面内嵌组件实验
 description: 本文仅是一个实验
 date: 2023-05-10 12:44:13
-tags: [Vue.js]
+tags: [Vue]
 layout: post
 cover:
   image: /vp-blog/covers/vue.jpeg

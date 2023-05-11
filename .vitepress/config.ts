@@ -26,8 +26,12 @@ export default defineConfig({
     },
     nav: [
       {
-        text: "首页",
+        text: "文章",
         link: "/",
+      },
+      {
+        text: "标签",
+        link: "/tags",
       },
     ],
     socialLinks: [

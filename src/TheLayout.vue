@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar.vue'
 import Home from '@/views/Home.vue'
 import '@/styles.css'
 import Post from '@/views/Post.vue'
+import Tags from "@/views/Tags.vue";
 
 // https://vitepress.dev/reference/runtime-api#usedata
 const { site, frontmatter } = useData()
@@ -28,6 +29,7 @@ router.onBeforeRouteChange = function (to) {
   <div class="container">
     <Home v-if="frontmatter.home || frontmatter.pagination" />
     <Post v-else-if="frontmatter.layout === 'post'" />
+    <Tags v-else-if="frontmatter.layout === 'tags'" />
     <div v-else>
       <a href="/">Home</a>
       <Content />
