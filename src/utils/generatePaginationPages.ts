@@ -9,7 +9,7 @@ async function generatePaginationPages(total: number, pageSize: number) {
     const content = `---
 pagination: true
 current: ${i}
-title: articles_${i}
+title: 前端芯事
 ---
     `
 
