@@ -2,7 +2,7 @@
 title: 转换成小写字母，看看 ASCII 码的巧妙设计
 description: 力扣 709，看看 ASCII 码的巧妙设计
 date: 2023-04-17 09:31:31
-tags: [算法, 位运算]
+tags: [算法]
 layout: post
 cover:
   image: /vp-blog/covers/leetcode.jpeg
