@@ -164,7 +164,7 @@ export default defineComponent({
 })
 ```
 
-跳转时，我们禁用默认行为，该用 `pushState` 跳转，`pushState` 的第一个参数，会在 `popState` 时获得，所以它也需要记录 `to` 这个参数。
+跳转时，我们禁用默认行为，改用 `pushState` 跳转，`pushState` 的第一个参数，会在 `popState` 时获得，所以它也需要记录 `to` 这个参数。
 
 上一节提到的 `current`，我们以 `app.proxy.$router.current` 这个形式获得，在 `setup` 里可以这么获取，但是翻了官网没有看到这部分内容，后续可以再跟进一下。
 
@@ -210,7 +210,7 @@ export default defineComponent({
 
 匹配的逻辑，在这里就是一个依据 `current` 简单的在数组中的查找，没有支持嵌套的逻辑。
 
-正应为 `current` 是响应式的，我们路由在切换时，我们也能够切换组件。
+正因为 `current` 是响应式的，我们路由在切换时，我们也能够切换组件。
 
 一个小技巧是使用 `unref`，如果我们不确定对象是否是一个 `ref`，或者是不想写 `.value` 时可以使用。
 

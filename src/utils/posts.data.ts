@@ -4,7 +4,7 @@ import generatePaginationPages from "./generatePaginationPages";
 
 declare const data: Post[]
 export { data }
-export default createContentLoader('docs/*.md', {
+export default createContentLoader('docs/**/*.md', {
   excerpt: true,
   transform(raw): Post[] {
     !(async function() {
