@@ -4,8 +4,9 @@ import VPNavBarTitle from 'vitepress/dist/client/theme-default/components/VPNavB
 import VPNavBarSearch from 'vitepress/dist/client/theme-default/components/VPNavBarSearch.vue'
 import VPNavBarMenu from 'vitepress/dist/client/theme-default/components/VPNavBarMenu.vue'
 import VPNavBarSocialLinks from 'vitepress/dist/client/theme-default/components/VPNavBarSocialLinks.vue'
-import { SunIcon, MoonIcon } from '@heroicons/vue/24/outline'
-import * as events from "events";
+import { SunIcon, MoonIcon, LightBulbIcon } from '@heroicons/vue/24/outline'
+import { data as allPosts } from "@/utils/posts.data";
+import { useRouter } from "vitepress";
 
 const isDark = useDark()
 const toggleDark = useToggle(isDark)
@@ -44,15 +45,25 @@ async function handleThemeClick(e) {
     }
   );
 }
+
+const router = useRouter()
+function handleRandomPost() {
+  const upper = allPosts.length
+  const idx = (Math.random() * upper) >> 0
+  router.go(allPosts[idx].url)
+}
 </script>
 
 <template>
   <header class="header">
-    <div class="container">
+    <div class="container gap-8">
       <VPNavBarTitle />
       <VPNavBarSearch />
       <VPNavBarMenu />
-      <div class="appearance flex items-center">
+      <div class="appearance flex items-center gap-8">
+        <a href="javascript:void(0);" title="随机前往一篇文章" @click="handleRandomPost">
+          <LightBulbIcon class="w-5" />
+        </a>
         <a href="javascript:void(0);" @click="handleThemeClick">
           <SunIcon v-if="!isDark" class="w-6" />
           <MoonIcon v-else class="w-6" />
@@ -76,11 +87,9 @@ async function handleThemeClick(e) {
 
 .appearance::before,
 .social-links::before {
-  margin-left: 16px;
   width: 1px;
   height: 24px;
   background-color: var(--vp-c-divider);
   content: '';
-  margin-right: 16px;
 }
 </style>
