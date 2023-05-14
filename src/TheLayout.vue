@@ -7,7 +7,7 @@ import Post from '@/views/Post.vue'
 import Tags from "@/views/Tags.vue";
 
 // https://vitepress.dev/reference/runtime-api#usedata
-const { site, frontmatter } = useData()
+const { frontmatter } = useData()
 const router = useRouter()
 
 router.onBeforeRouteChange = function (to) {

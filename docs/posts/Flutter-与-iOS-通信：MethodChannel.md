@@ -1,6 +1,6 @@
 ---
 title: Flutter 与 iOS 通信：MethodChannel
-date: 2023-04-23 10:38:44
+date: 2023-04-23 10:38:44+8
 tags: [Flutter, iOS, Swift]
 layout: post
 cover:

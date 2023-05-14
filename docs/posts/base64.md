@@ -1,7 +1,7 @@
 ---
 title: 手写 base64 编码
 description: 通过手写 base64 编码，了解为什么编码后会增加三分之一大小
-date: 2023-05-10 14:04:54
+date: 2023-05-10 14:04:54+8
 tags: [算法, Javascript]
 layout: post
 cover:

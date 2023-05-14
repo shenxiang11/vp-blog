@@ -1,6 +1,6 @@
 ---
 title: 如何命名 ts 中的类型
-date: 2023-04-16 13:12:16
+date: 2023-04-16 13:12:16+8
 tags: [Typescript]
 layout: post
 cover:

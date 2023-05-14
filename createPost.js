@@ -8,7 +8,7 @@ const dayjs = require("dayjs");
 
   await fs.writeFile(`${dir}/${filename}`, `---
 title: ${process.argv[3]}
-date: ${dayjs().format('YYYY-MM-DD HH:mm:ss')}
+date: ${dayjs().format('YYYY-MM-DD HH:mm:ss')}+8
 tags: []
 layout: post
 cover:

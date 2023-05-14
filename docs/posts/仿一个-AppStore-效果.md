@@ -1,6 +1,6 @@
 ---
 title: 仿一个 AppStore 效果
-date: 2023-05-04 11:44:18
+date: 2023-05-04 11:44:18+8
 tags: [Vue, Javascript]
 layout: post
 cover:

@@ -3,7 +3,7 @@ import { useData } from 'vitepress'
 import { CalendarIcon, CalendarDaysIcon } from '@heroicons/vue/24/outline'
 import dayjs from 'dayjs'
 
-const { site, page, frontmatter } = useData()
+const { page, frontmatter } = useData()
 </script>
 
 <template>
