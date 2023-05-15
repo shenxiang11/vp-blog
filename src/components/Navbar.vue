@@ -61,9 +61,9 @@ function handleRandomPost() {
       <VPNavBarSearch />
       <VPNavBarMenu />
       <div class="appearance flex items-center gap-8">
-        <a href="javascript:void(0);" title="随机前往一篇文章" @click="handleRandomPost">
-          <LightBulbIcon class="w-5" />
-        </a>
+<!--        <a href="javascript:void(0);" title="随机前往一篇文章" @click="handleRandomPost">-->
+<!--          <LightBulbIcon class="w-5" />-->
+<!--        </a>-->
         <a href="javascript:void(0);" @click="handleThemeClick">
           <SunIcon v-if="!isDark" class="w-6" />
           <MoonIcon v-else class="w-6" />
