@@ -1,6 +1,11 @@
 import { createContentLoader } from 'vitepress'
 import dayjs from 'dayjs'
+import utc from 'dayjs/plugin/utc'
+import timezone from 'dayjs/plugin/timezone'
 import generatePaginationPages from "./generatePaginationPages";
+
+dayjs.extend(utc)
+dayjs.extend(timezone)
 
 declare const data: Post[]
 export { data }
@@ -27,7 +32,8 @@ export default createContentLoader('docs/**/*.md', {
 })
 
 function formatDate(raw: string): Post['date'] {
-  const date = dayjs(raw)
+  const date = dayjs.tz(raw, 'Asia/Shanghai')
+
   return {
     time: date.valueOf(),
     string: date.format('YYYY-MM-DD HH:mm:ss')
