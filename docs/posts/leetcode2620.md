@@ -15,7 +15,9 @@ cover:
 
 ## 答案
 
-```javascript []
+::: code-group
+
+```javascript
 /**
  * @param {number} n
  * @return {Function} counter
@@ -34,7 +36,7 @@ var createCounter = function(n) {
  */
 ```
 
-```typescript []
+```typescript
 function createCounter(n: number): () => number {
     return () => {
         return n++
@@ -49,6 +51,8 @@ function createCounter(n: number): () => number {
  * counter() // 12
  */
 ```
+
+:::
 
 
 ## 解析
