@@ -23,7 +23,9 @@ cover:
 
 和昨天的计数器的题目并没有太大区别，我们只需要用对象形式返回三个函数即可。
 
-```typescript []
+::: code-group
+
+```typescript
 type ReturnObj = {
     increment: () => number,
     decrement: () => number,
@@ -54,7 +56,7 @@ function createCounter(init: number): ReturnObj {
  */
 ```
 
-```javascript []
+```javascript
 /**
  * @param {integer} init
  * @return { increment: Function, decrement: Function, reset: Function }
@@ -82,3 +84,5 @@ var createCounter = function(init) {
  * counter.decrement(); // 4
  */
 ```
+
+:::
