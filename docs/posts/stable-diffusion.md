@@ -33,3 +33,10 @@ cover:
 AI 很强大，但并不是技术无罪，有人用 AI 作图给女生造黄谣言，模型网站上有人上传政治人物（不要搞得最后大家都没得玩）。
 
 我们需要注意不要与政治、色情、侵犯他人等沾边。
+
+
+## 记一下我的启动命令
+
+```shell
+PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.7 ./webui.sh --precision full --no-half
+```

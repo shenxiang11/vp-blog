@@ -2,7 +2,7 @@
 title: 复合函数
 description: JavaScript 14 天编程挑战
 date: 2023-05-19 12:26:50+8
-tags: [Javascript]
+tags: [Javascript, redux]
 layout: post
 cover:
     image: /vp-blog/covers/js14challenge.png
