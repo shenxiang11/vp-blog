@@ -4,7 +4,7 @@ import VPNavBarTitle from 'vitepress/dist/client/theme-default/components/VPNavB
 import VPNavBarSearch from 'vitepress/dist/client/theme-default/components/VPNavBarSearch.vue'
 import VPNavBarMenu from 'vitepress/dist/client/theme-default/components/VPNavBarMenu.vue'
 import VPNavBarSocialLinks from 'vitepress/dist/client/theme-default/components/VPNavBarSocialLinks.vue'
-import { SunIcon, MoonIcon, LightBulbIcon } from '@heroicons/vue/24/outline'
+import { SunIcon, MoonIcon } from '@heroicons/vue/24/outline'
 import { data as allPosts } from "@/utils/posts.data";
 import { useRouter } from "vitepress";
 
