@@ -327,7 +327,7 @@ redux 的中间件实际是一个创建中间件的函数，它需要我们将�
 
 `dispatch: (action, ...args) => dispatch(action, ...args)`，这一行的目的是为了不让 `dispatch` 是一个固定的初始 `dispatch`，采用函数的形式，因为 `dispatch` 可能会被中间件改变，每个中间件执行时，是执行最终加强过的 `dispatch`，它最后会被下面的 `compose` 函数调用中间件后修改。
 
-可以想象一下，如果只是传给了 `middlewareAPI` 的是 `dispatch: dispatch`，这个是固定的我们初始化的 `dispatch`，即初始的只支持传给它对象的 `dispatch`，那么，我们的中间件不是不起作用了吗？
+可以想象一下，如果只是传给了 `middlewareAPI` 的是 `dispatch: dispatch`，这个是固定的我们初始化的 `dispatch`，即初始的只支持传给它对象的 `dispatch`，那么，我们的中间件不是不起作用了吗？实际上，在我们的例子里，如果我们修改成这样，会发现异步 action 时，无法打印出日志，下篇我们手写中间件时分析一下此现象。
 
 `compose` 则是一个能够让中间件从右向左执行的代码，我这里使用了 `reduceRight` 来实现，这和官方的实现右略微的区别，具体可以参考我之前提到的[这一篇](/docs/posts/leetcode2629.html)。
 
