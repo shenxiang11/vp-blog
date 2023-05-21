@@ -65,8 +65,6 @@ export const store = createStore(counterReducer, applyMiddleware(thunk, myLogger
 
 我们自然可以在 `dispatch` 前后，分别获取到变更前的状态和变更后的状态。
 
-TODO：为什么要返回 returnVal
-
 
 ## 实现 my-thunk 中间件
 
