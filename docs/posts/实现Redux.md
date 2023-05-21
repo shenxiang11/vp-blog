@@ -157,6 +157,8 @@ export default function createStore(reducer) {
 
 :::
 
+我们使用了自己的 `createStre` 替换了 `Redux` 库的方法，到这里你的应用应该能够正常运行。
+
 我们实现了 `createStore`，它接收一个 `reducer` 并返回出我们调用的三个方法。
 
 `getState` 最容易，它是返回当前状态的。代码高亮的第 27 行，是为了获取应用的初始状态，因为我们 `state` 默认是 `undefined`，需要默认执行 `reducer` 的 `default` 分支获取初始状态。它的 `action type` 需要和用户定义的不同即可，官方同样采用的是随机字符串的方式。
