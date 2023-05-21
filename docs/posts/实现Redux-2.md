@@ -2,7 +2,7 @@
 title: 实现 Redux (二)
 description: 添加中间件机制
 date: 2023-05-20 09:28:07+8
-tags: []
+tags: [React, Redux]
 layout: post
 cover:
   image: /vp-blog/covers/redux.png
