@@ -93,7 +93,7 @@ npx simple-git-hooks
 | feat     | 新功能             |
 | fix      | 修复 bug          |
 | docs     | 仅包含文档的修改        |
-| dx       | 对插件的修改 (?)      |
+| dx       | 开发体验优化      (?) |
 | style    | 仅格式化的变动         |
 | refactor | 重构              |
 | perf     | 提高性能的修改         |
