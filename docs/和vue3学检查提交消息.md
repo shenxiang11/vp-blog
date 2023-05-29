@@ -72,7 +72,7 @@ if (!commitRE.test(msg)) {
 }
 ```
 
-奇怪的是 vue3 此文件名后缀是 js，但是使用了 `import` 语句，这在我的环境下是不行的，我们可以将其改位 `mjs` 后缀。
+奇怪的是 vue3 此文件名后缀是 js，但是使用了 `import` 语句，这在我的环境下是不行的，我们可以将其改为 `mjs` 后缀。
 
 
 ## Step 4: 设置 hooks
@@ -86,7 +86,7 @@ npx simple-git-hooks
 
 ## message 规范解读
 
-`?` 代表不是很确定且 commitiizen 规范中似乎没有。
+`?` 代表不是很确定且 commitizen 规范中似乎没有。
 
 | 名称       | 意义              |
 |----------|-----------------|
