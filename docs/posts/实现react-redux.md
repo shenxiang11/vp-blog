@@ -188,14 +188,8 @@ export const Provider = ({ store, children }) => {
 
 export function useSelector(selector) {
   const store = useContext(Context);
-
-  const [, forceUpdate] = useState(0);
-
-  useSyncExternalStore(() => {
-    store.subscribe(() => {
-      forceUpdate(v => v+1);
-    });
-  }, store.getState);
+  
+  useSyncExternalStore(store.subscribe, store.getState);
 
   return selector(store.getState());
 }
@@ -209,7 +203,7 @@ export function useDispatch() {
 
 参数 `selector` 是一个函数，其接收一个 `state`，它是 `store.getState()` 的执行结果，它本身的执行结果将返回给组件，即它能够帮助我们取出我们需要的状态。
 
-同时，我们在这里利用 `useSyncExternalStore` 实现强制更新的逻辑，这是 React18 才支持的，如果考虑兼容性问题，我们可以使用 `useLayoutEffect`。
+同时，我们在这里利用 `useSyncExternalStore` 实现强制更新的逻辑，这是 React18 才支持的，如果考虑兼容性问题，我们可以使用 `useLayoutEffect` 配合 `forceUpdate`。
 
 
 ## 总结
