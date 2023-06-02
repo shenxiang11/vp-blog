@@ -11,15 +11,15 @@ cover:
 
 ## useId
 
-### `useId` 是一个 React Hook，可以生成传递给无障碍属性的唯一 ID。
+`useId` 是一个 React Hook，可以生成传递给无障碍属性的唯一 ID。
 
 官网目前只提到了，这个是为了无障碍而使用的，国内感觉不是太注重这一块，可以简单了解一下。
 
-### `useId` 不应该被用来生成列表中的 key。key 应该有你的数据生成。
+`useId` 不应该被用来生成列表中的 key。key 应该有你的数据生成。
 
 遵循官网，只用于无障碍，不要用别的地方。
 
-### 使用无障碍时，为什么要用它，不能写死字符串吗？
+** 使用无障碍时，为什么要用它，不能写死字符串吗？**
 
 ```jsx
 const passwordHintId = useId();
@@ -32,7 +32,7 @@ const passwordHintId = useId();
 
 我们可以看到，无障碍属是如上代码这么使用的，如果当我们这个组件在页面上多次使用时，会出现多个相同 id 的元素，这违反了 id 必须唯一的原则。
 
-### 能不能自己维护一个自增的 id？
+** 能不能自己维护一个自增的 id？**
 
 客户端渲染时，是可以的但是没有必要。而且如果你是服务端渲染，使用自增计数器会非常困难。
 
@@ -41,7 +41,7 @@ const passwordHintId = useId();
 
 ## useSyncExternalStore
 
-### `useSyncExternalStore` 是一个让你订阅外部 store 的 React Hook。
+`useSyncExternalStore` 是一个让你订阅外部 store 的 React Hook。
 
 前一段时间，在[手写 React-Redux](http://localhost:3000/vp-blog/docs/posts/%E5%AE%9E%E7%8E%B0react-redux.html) 中，我用到了这个 hook。官方文档也差不多举了一个 store 的例子。
 
@@ -82,7 +82,7 @@ function subscribe(callback) {
 
 ## useTransition
 
-### `useTransition` 是一个让你在不阻塞 UI 的情况下来更新状态的 React Hook。
+`useTransition` 是一个让你在不阻塞 UI 的情况下来更新状态的 React Hook。
 
 它返回一个 `isPending` 和 `startTransition`，分别返回我们是一个否是挂起的状态与一个将状态更新标记为 transition(暂时不知道这么翻译准确)。
 

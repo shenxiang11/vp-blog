@@ -10,9 +10,9 @@ cover:
 
 ## useState
 
-### useState 是一个 React Hook，它允许你向组件添加一个 state 变量。
+`useState` 是一个 React Hook，它允许你向组件添加一个 state 变量。
 
-useState 可以算得上最重要的 hook 之一了，它的基本使用本一位都掌握了，但是看了官网没想到还是有几个重要的知识点可以再总结一下。
+`useState` 可以算得上最重要的 hook 之一了，它的基本使用本一位都掌握了，但是看了官网没想到还是有几个重要的知识点可以再总结一下。
 
 `setXXX` 仅更新下一次渲染的状态变量。如果再调用它后读取状态变量，依然是旧值。
 
@@ -33,7 +33,7 @@ https://zh-hans.react.dev/reference/react/useState
 
 ## useReducer
 
-### `useReducer` 是用来添加 reducer 的 hook。
+`useReducer` 是用来添加 reducer 的 hook。
 
 它的很多概念和 redux 库一样，和 setState 比起来，像是对象一类的复杂数据适合用它来管理。
 
@@ -67,7 +67,7 @@ https://zh-hans.react.dev/reference/react/useReducer
 
 ## useRef
 
-### `useRef` 是一个 React Hook，它能让你引用一个不需要渲染的值。
+`useRef` 是一个 React Hook，它能让你引用一个不需要渲染的值。
 
 改变 ref 不会触发重新渲染，这意味着 ref 是存储一些不影响组件视图输出的信息的完美选择。
 
