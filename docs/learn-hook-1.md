@@ -43,7 +43,7 @@ const passwordHintId = useId();
 
 `useSyncExternalStore` 是一个让你订阅外部 store 的 React Hook。
 
-前一段时间，在[手写 React-Redux](/vp-blog/docs/posts/%E5%AE%9E%E7%8E%B0react-redux.html) 中，我用到了这个 hook。官方文档也差不多举了一个 store 的例子。
+前一段时间，在[手写 React-Redux](/docs/posts/%E5%AE%9E%E7%8E%B0react-redux.html) 中，我用到了这个 hook。官方文档也差不多举了一个 store 的例子。
 
 另外，官网提供的另一个例子是用来订阅浏览器的状态，代码如下：
 
