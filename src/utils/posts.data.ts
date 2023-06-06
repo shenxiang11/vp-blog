@@ -13,7 +13,7 @@ export default createContentLoader('docs/**/*.md', {
   excerpt: true,
   transform(raw): Post[] {
     !(async function() {
-      await generatePaginationPages(raw.length, 8)
+      await generatePaginationPages(raw.length, 10)
     })()
     return (
       raw

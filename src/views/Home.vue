@@ -7,7 +7,7 @@ import { computed, ref, watch } from "vue";
 const { site, frontmatter } = useData()
 
 const currentPage = ref(frontmatter.value.current ?? 1)
-const pageSize = 8
+const pageSize = 10
 
 const posts = computed(() => {
   const start = (currentPage.value - 1) * pageSize
