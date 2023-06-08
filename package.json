@@ -16,7 +16,7 @@
     "docs:preview": "vitepress preview"
   },
   "dependencies": {
-    "@heroicons/vue": "^2.0.17",
+    "@heroicons/vue": "^2.0.18",
     "@vitejs/plugin-vue-jsx": "^3.0.1",
     "dayjs": "^1.11.7",
     "lxgw-wenkai-screen-webfont": "^1.7.0",
