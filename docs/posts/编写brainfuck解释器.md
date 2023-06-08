@@ -246,7 +246,7 @@ node index.mjs ./res/fib.bf
 
 ![](/resources/2023-06/03.png)
 
-### 斐波那契数列
+### 谢尔宾斯基三角形
 
 ```text [res/sierpinski.bf]
 [ This program prints Sierpinski triangle on 80-column display. ]
