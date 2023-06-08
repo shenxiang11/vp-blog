@@ -21,7 +21,7 @@
     "dayjs": "^1.11.7",
     "lxgw-wenkai-screen-webfont": "^1.7.0",
     "vitepress": "1.0.0-alpha.75",
-    "vue": "^3.2.47"
+    "vue": "^3.3.4"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.2.0",
