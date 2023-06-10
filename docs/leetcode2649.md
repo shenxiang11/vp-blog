@@ -5,7 +5,7 @@ date: 2023-06-10 17:16:11+8
 tags: [Javascript]
 layout: post
 cover:
-image: /vp-blog/covers/js14challenge.png
+    image: /vp-blog/covers/js14challenge.png
 ---
 
 ## 题目
