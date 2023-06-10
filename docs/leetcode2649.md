@@ -21,6 +21,11 @@ https://leetcode.cn/problems/nested-array-generator/
 
 `yeild*` 是一个表达式语句，它自身有返回值，在这里它的作用是可以递归调用生成器函数（其实只要是可迭代的数据类型都可以）。
 
+更官方一点的说法是：
+
+> `yield*` 表达式用于委托给另一个generator 或可迭代对象。
+
+
 ::: code-group
 
 ```typescript
