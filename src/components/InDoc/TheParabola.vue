@@ -2,14 +2,18 @@
 import { nextTick, onMounted, ref } from "vue";
 
 const cart = ref<HTMLDivElement | null>(null);
-const ball = ref<HTMLDivElement | null>(null);
-const ballInner = ref<HTMLDivElement | null>(null);
 
 function handleClick(e) {
   const boundBtn = e.target.getBoundingClientRect();
   const boundCart = cart.value!.getBoundingClientRect();
-  const ballDom = ball.value;
-  const ballInnerDom = ballInner.value;
+
+  const ballDom = document.createElement('span');
+  ballDom.className = 'ball';
+  const ballInnerDom = document.createElement('span');
+  ballInnerDom.className = 'inner';
+
+  ballDom.append(ballInnerDom);
+  cart.value!.append(ballDom);
 
   const offsetX = boundCart.left + boundCart.width / 2 - (boundBtn.left + boundBtn.width / 2);
   const offsetY = boundCart.top + boundCart.height / 2 - (boundBtn.top + boundBtn.height / 2);
@@ -23,13 +27,11 @@ function handleClick(e) {
     ballDom!.style.transform = `translate3d(0, 0, 0)`;
     ballInnerDom!.style.transform = `translate3d(0, 0, 0)`;
   });
-}
 
-onMounted(() => {
-  ball.value!.addEventListener('transitionend', function() {
-    ball.value!.style.display = 'none';
+  ballDom.addEventListener('transitionend', function() {
+    ballDom.remove();
   });
-});
+}
 </script>
 
 <template>
@@ -44,8 +46,10 @@ onMounted(() => {
     </div>
     <div class="cart" ref="cart">
       购物车
-      <span class="ball" ref="ball">
-        <span class="inner" ref="ballInner"></span>
+      <span class="ball">
+        <span class="inner">
+          <!-- 占个位，不写 CSS 貌似会被移除 -->
+        </span>
       </span>
     </div>
   </div>
@@ -79,7 +83,9 @@ onMounted(() => {
     bottom: 0;
     background-color: #73bc83;
 }
+</style>
 
+<style>
 .ball {
     position: absolute;
     display: none;
