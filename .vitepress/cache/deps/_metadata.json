@@ -1,41 +1,29 @@
 {
-  "hash": "061626e0",
-  "browserHash": "e4de510e",
+  "hash": "057c1af2",
+  "browserHash": "646cb4ec",
   "optimized": {
     "vue": {
       "src": "../../../node_modules/.pnpm/vue@3.2.47/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "99afce9f",
+      "fileHash": "b3058ee2",
+      "needsInterop": false
+    },
+    "@vueuse/core": {
+      "src": "../../../node_modules/.pnpm/@vueuse+core@10.2.0_vue@3.2.47/node_modules/@vueuse/core/index.mjs",
+      "file": "@vueuse_core.js",
+      "fileHash": "8d777423",
       "needsInterop": false
     },
     "@heroicons/vue/24/outline": {
       "src": "../../../node_modules/.pnpm/@heroicons+vue@2.0.17_vue@3.2.47/node_modules/@heroicons/vue/24/outline/index.js",
       "file": "@heroicons_vue_24_outline.js",
-      "fileHash": "bf2f972c",
+      "fileHash": "be062f9e",
       "needsInterop": true
     },
     "dayjs": {
       "src": "../../../node_modules/.pnpm/dayjs@1.11.7/node_modules/dayjs/dayjs.min.js",
       "file": "dayjs.js",
-      "fileHash": "857e8aed",
-      "needsInterop": true
-    },
-    "@vueuse/core": {
-      "src": "../../../node_modules/.pnpm/@vueuse+core@10.1.2_vue@3.2.47/node_modules/@vueuse/core/index.mjs",
-      "file": "@vueuse_core.js",
-      "fileHash": "d69ec43c",
-      "needsInterop": false
-    },
-    "dayjs/plugin/utc": {
-      "src": "../../../node_modules/.pnpm/dayjs@1.11.7/node_modules/dayjs/plugin/utc.js",
-      "file": "dayjs_plugin_utc.js",
-      "fileHash": "a58113a6",
-      "needsInterop": true
-    },
-    "dayjs/plugin/timezone": {
-      "src": "../../../node_modules/.pnpm/dayjs@1.11.7/node_modules/dayjs/plugin/timezone.js",
-      "file": "dayjs_plugin_timezone.js",
-      "fileHash": "a7373d91",
+      "fileHash": "d1eebe27",
       "needsInterop": true
     }
   },
