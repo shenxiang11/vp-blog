@@ -220,7 +220,7 @@ node index.mjs ./res/hello_world.bf
 
 ### Hello World
 
-```text [res/hello_world.bf]
+```txt [res/hello_world.bf]
 ++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>.
 ```
 
@@ -235,7 +235,7 @@ node index.mjs ./res/hello_world.bf
 node index.mjs ./res/fib.bf        
 ```
 
-```text [res/fib.bf]
+```txt [res/fib.bf]
 >++++++++++>+>+[
     [+++++[>++++++++<-]>.<++++++[>--------<-]+<<<]>.>>[
         [-]<[>+<-]>>[<<+>+>-]<[>+<-[>+<-[>+<-[>+<-[>+<-[>+<-
@@ -248,7 +248,7 @@ node index.mjs ./res/fib.bf
 
 ### 谢尔宾斯基三角形
 
-```text [res/sierpinski.bf]
+```txt [res/sierpinski.bf]
 [ This program prints Sierpinski triangle on 80-column display. ]
                                 >
                                + +
@@ -290,7 +290,7 @@ node index.mjs ./res/fib.bf
 
 ### 小写转大写
 
-```text [res/to_upper.bf]
+```txt [res/to_upper.bf]
 ,----------[----------------------.,----------]
 ```
 
