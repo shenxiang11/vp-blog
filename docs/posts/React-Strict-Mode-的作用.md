@@ -2,7 +2,7 @@
 title: React Strict Mode 的作用
 description: 为什么我的 useEffect 执行了两次
 date: 2023-05-03 08:55:19+8
-tags: [React.js, Javascript]
+tags: [React, Javascript]
 layout: post
 cover:
   image: /vp-blog/covers/react.jpeg
