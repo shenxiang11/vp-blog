@@ -2,7 +2,7 @@
 title: 多了种声明变量的方式？
 description: Typescript 5.2 的 using
 date: 2023-07-06 15:46:25+8
-tags: []
+tags: [Typescript]
 layout: post
 cover:
   image: /vp-blog/covers/ts-using.webp
