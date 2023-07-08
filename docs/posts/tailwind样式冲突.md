@@ -2,7 +2,7 @@
 title: 解决 Tailwind 样式冲突
 description: Tailwind 小技巧
 date: 2023-07-07 21:29:51+8
-tags: [CSS, Tailwind]
+tags: [CSS, Tailwind CSS]
 layout: post
 cover:
   image: /vp-blog/covers/tailwind.jpeg
