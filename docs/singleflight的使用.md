@@ -111,6 +111,86 @@ func getDateFromDB(key string) (string, error) {
 我们完全可以让其中一个请求去查询数据库，其他请求也使用它的查询结果即可，我们可以使用 `singleflight 来优化`, 代码如下：
 
 ```go
+package singleFlight_demo
+
+import (
+	"errors"
+	"fmt"
+	"golang.org/x/sync/singleflight"
+	"log"
+	"sync"
+	"testing"
+)
+
+var errorNotExist = errors.New("not exist")
+var g singleflight.Group
+
+func TestSingleFlight(t *testing.T) {
+	var wg sync.WaitGroup
+	wg.Add(10)
+
+	for i := 0; i < 10; i++ {
+		go func() {
+			defer wg.Done()
+			v, err := getDataSF("some key")
+			//v, err := getData("some key")
+			if err != nil {
+				return
+			}
+
+			fmt.Println(v)
+		}()
+	}
+	wg.Wait()
+}
+
+func getDataSF(key string) (string, error) {
+	data, err := getDataFromCache(key)
+	if errors.Is(err, errorNotExist) {
+		v, err, _ := g.Do(key, func() (interface{}, error) {
+			return getDateFromDB(key)
+		})
+
+		if err != nil {
+			return "", err
+		}
+
+		data = v.(string)
+	} else if err != nil {
+		return "", err
+	}
+
+	return data, nil
+}
+
+func getData(key string) (string, error) {
+	data, err := getDataFromCache(key)
+	if errors.Is(err, errorNotExist) {
+		data, err = getDateFromDB(key)
+
+		if err != nil {
+			return "", err
+		}
+	} else if err != nil {
+		return "", err
+	}
+
+	return data, nil
+}
+
+func getDataFromCache(key string) (string, error) {
+	return "", errorNotExist
+}
+
+func getDateFromDB(key string) (string, error) {
+	log.Printf("get %s from db", key)
+	return "12345678990", nil
+}
+```
+
+执行结果如下：
+
+```text
 2023/10/10 17:58:18 get some key from db
 12345678990
 12345678990
