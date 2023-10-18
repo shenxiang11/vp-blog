@@ -35,8 +35,8 @@ devDependencies:
     specifier: 2.1.4
     version: 2.1.4
   '@tsconfig/node18':
-    specifier: ^2.0.0
-    version: 2.0.0
+    specifier: ^18.2.1
+    version: 18.2.1
   '@types/node':
     specifier: ^18.16.3
     version: 18.16.5
@@ -904,8 +904,8 @@ packages:
       resolve: 1.22.2
     dev: true
 
-  /@tsconfig/node18@2.0.0:
-    resolution: {integrity: sha512-uI/B0ShkiEwTk036pncXucVlj4y11EW6mycQvCEzC1PkR2TBvdQZ5Wf96dp+XXWAc70FEDfvwTqanoaDpP6rPw==}
+  /@tsconfig/node18@18.2.1:
+    resolution: {integrity: sha512-RDDZFuofwkcKpl8Vpj5wFbY+H53xOtqK7ckEL1sXsbPwvKwDdjQf3LkHbtt9sxIHn9nWIEwkmCwBRZ6z5TKU2A==}
     dev: true
 
   /@types/json-schema@7.0.11:
