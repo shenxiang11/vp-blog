@@ -4,7 +4,7 @@ date: 2024-04-07 11:22:07+8
 tags: [SwiftUI]
 layout: post
 cover:
-  image: /vp-blog/covers/ios17-stature-control.png
+  image: /vp-blog/covers/ios17-stature-control.jpg
 ---
 
 
