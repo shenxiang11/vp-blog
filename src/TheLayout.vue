@@ -38,17 +38,14 @@ router.onBeforeRouteChange = function (to) {
 
   <footer class="rounded-lg m-4">
     <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-      <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
-        >© 2023 前端芯事. All Rights Reserved.</span
-      >
+      <span class="block text-sm text-gray-500 text-center dark:text-gray-400">© 2024 前端芯事. All Rights Reserved.</span>
     </div>
   </footer>
 </template>
 
 <style scoped>
 .container {
-  @apply md:w-full;
-  width: 960px;
+  @apply md:w-[960px] w-full px-[20px];
   min-height: 100vh;
   margin: 0 auto;
 }

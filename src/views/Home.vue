@@ -27,10 +27,10 @@ watch(() => frontmatter.value.current, function() {
       :href="site.base.slice(0, -1) + post.url"
       v-for="post in posts"
       :key="post.url"
-      class="border my-4 flex gap-4 h-36 p-4 rounded-md"
+      class="border my-4 flex flex-col gap-4 md:h-36 p-4 rounded-md md:flex-row"
     >
-      <div class="overflow-hidden">
-        <img v-if="post.cover" :src="post.cover.image" class="w-48 h-full object-cover" />
+      <div class="md:overflow-hidden">
+        <img v-if="post.cover" :src="post.cover.image" class="md:w-48 md:h-full w-full h-auto object-cover" />
       </div>
       <div class="flex-shrink-0 flex-grow flex flex-col">
         <h1 class="text-xl font-semibold mb-3">{{ post.title }}</h1>
