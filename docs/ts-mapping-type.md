@@ -1,5 +1,6 @@
 ---
 title: 映射类型
+description: 类型体操前需要熟悉的知识点
 date: 2024-04-09 15:12:23+8
 tags: [Typescript]
 layout: post
