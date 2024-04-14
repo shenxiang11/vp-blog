@@ -9,7 +9,7 @@ cover:
 
 
 <script setup>
-import CodeSandbox from 'src/components/InDoc/CodeSandbox.vue'
+import CodeSandbox from '@/components/InDoc/CodeSandbox.vue'
 </script>
 
 <CodeSandbox src="https://player.bilibili.com/player.html?aid=1900022076&bvid=BV1ym411X762&cid=1429607977&p=1"></CodeSandbox>
