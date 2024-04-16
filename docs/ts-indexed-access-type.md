@@ -1,5 +1,6 @@
 ---
 title: 索引访问类型
+description: 类型体操前需要熟悉的知识点
 date: 2024-04-15 22:09:42+8
 tags: [Typescript]
 layout: post
