@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@heroicons/vue": "^2.0.17",
-    "@vitejs/plugin-vue-jsx": "^3.0.1",
+    "@vitejs/plugin-vue-jsx": "^3.0.2",
     "@vueuse/core": "^10.2.0",
     "dayjs": "^1.11.7",
     "lxgw-wenkai-screen-webfont": "^1.7.0",
