@@ -3,6 +3,8 @@ title: 在 Rust 中使用 Argon2 进行密码哈希处理
 date: 2024-12-24 21:00:52+8
 tags: [Rust]
 layout: post
+cover:
+  image: /vp-blog/covers/rust.png
 ---
 
 在当今的软件开发中，安全地存储用户密码是至关重要的一环。Argon2 作为一种先进且安全的密码哈希函数，在 Rust 语言中也有着方便的实现，能够帮助我们有效地保护用户的密码信息。本文将详细介绍如何在 Rust 环境下使用 Argon2 来进行密码哈希及验证操作。
